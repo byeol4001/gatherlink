@@ -1,5 +1,6 @@
 import { css, Global } from "@emotion/react";
-// import styled from "@emotion/styled";
+import styled from "@emotion/styled";
+// import BgLogo from "../public/images//body-logo-bg.png";
 
 export const GlobalStyles = (
   <Global
@@ -8,10 +9,14 @@ export const GlobalStyles = (
       body {
         padding: 0;
         margin: 0;
+      }
+
+      body {
         background: #d9d9d9;
         min-height: 100%;
         font-family: Helvetica, Arial, sans-serif;
       }
+
       a {
         text-decoration: none;
       }
@@ -37,3 +42,17 @@ export const GlobalStyles = (
     `}
   />
 );
+
+export const MainContent = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > div {
+    width: 100%;
+    max-width: 587px;
+    background: #ffffff;
+    box-shadow: 0px -11px 41px 0px #0000001a;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+`;

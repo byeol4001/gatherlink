@@ -1,5 +1,11 @@
+import { MainContent } from "../src/style";
+
 const Index = () => {
-  return <div>index</div>;
+  return (
+    <MainContent>
+      <div>hi</div>
+    </MainContent>
+  );
 };
 
 export default Index;
