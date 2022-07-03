@@ -1,10 +1,12 @@
 import Document, { Html, Main, NextScript } from "next/document";
 import { NextSeo } from "next-seo";
+import { GlobalStyles } from "../src/style";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="ko">
+        {GlobalStyles}
         <NextSeo
           openGraph={{
             // url: `${process.env.CERTIFICATE_S3_ORIGIN}/`,
