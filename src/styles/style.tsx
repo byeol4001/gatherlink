@@ -48,12 +48,19 @@ export const GlobalStyles = (
       }
 
       button {
-        width: 100%;
-        height: 55px;
+        background: inherit;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
         padding: 0;
-        line-height: 55px;
-        font-weight: 700;
-        border-radius: 8px;
+        overflow: visible;
+        cursor: pointer;
+      }
+
+      input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
       }
     `}
   />
