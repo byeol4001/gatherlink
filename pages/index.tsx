@@ -1,4 +1,4 @@
-import { MainContent } from "../src/style";
+import { MainContent } from "../src/styles/style";
 
 const Index = () => {
   return (

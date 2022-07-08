@@ -1,6 +1,6 @@
 import Document, { Html, Main, NextScript } from "next/document";
 import { NextSeo } from "next-seo";
-import { GlobalStyles } from "../src/style";
+import { GlobalStyles } from "../src/styles/style";
 
 export default class MyDocument extends Document {
   render() {

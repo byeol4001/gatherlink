@@ -1,7 +1,18 @@
 import { css, Global } from "@emotion/react";
 import styled from "@emotion/styled";
-// import BgLogo from "../public/images//body-logo-bg.png";
 
+/* css constatns */
+const size = {
+  mobile: "587px",
+  bgLogoShowWidth: "1440px",
+};
+
+export const mideaQuery = {
+  mobile: `(min-width: ${size.mobile})`,
+  bgLogoShowWidth: `(min-width: ${size.bgLogoShowWidth})`,
+};
+
+/* common styles */
 export const GlobalStyles = (
   <Global
     styles={css`
@@ -12,9 +23,9 @@ export const GlobalStyles = (
       }
 
       body {
-        background: #d9d9d9;
         min-height: 100%;
         font-family: Helvetica, Arial, sans-serif;
+        background-size: 90%;
       }
 
       a {
@@ -49,7 +60,7 @@ export const MainContent = styled.section`
   justify-content: center;
   & > div {
     width: 100%;
-    max-width: 587px;
+    max-width: ${size.mobile};
     background: #ffffff;
     box-shadow: 0px -11px 41px 0px #0000001a;
     height: 100vh;
