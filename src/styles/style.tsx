@@ -23,9 +23,14 @@ export const GlobalStyles = (
       }
 
       body {
+        background: url("images/body-logo-bg.png") no-repeat center center,
+          #d9d9d9;
         min-height: 100%;
         font-family: Helvetica, Arial, sans-serif;
         background-size: 90%;
+        @media ${mideaQuery.bgLogoShowWidth} {
+          background-size: auto;
+        }
       }
 
       a {
