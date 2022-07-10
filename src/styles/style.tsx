@@ -80,3 +80,9 @@ export const MainContent = styled.section`
     overflow-y: scroll;
   }
 `;
+
+export const FormContainer = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 10px;
+`;
