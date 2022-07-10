@@ -73,6 +73,7 @@ export const MainContent = styled.section`
   & > div {
     width: 100%;
     max-width: ${size.mobile};
+    padding: 30px;
     background: #ffffff;
     box-shadow: 0px -11px 41px 0px #0000001a;
     height: 100vh;
