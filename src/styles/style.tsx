@@ -13,7 +13,7 @@ export const mideaQuery = {
 };
 
 /* common styles */
-export const GlobalStyles = (
+export const GlobalStyles = () => (
   <Global
     styles={css`
       html,
