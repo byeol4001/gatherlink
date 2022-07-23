@@ -1,13 +1,5 @@
-import { Button } from "../src/components/Button";
-import { Input } from "../src/components/Input";
-
 const Index = () => {
-  return (
-    <>
-      <Button text="test button" />
-      <Input placeholder="test Input" />
-    </>
-  );
+  return <div>index</div>;
 };
 
 export default Index;
